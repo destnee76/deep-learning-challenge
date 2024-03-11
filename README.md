@@ -1,16 +1,13 @@
 # deep-learning-challenge
-[Link to Colab Notebook](https://colab.research.google.com/drive/1nfnbZBiQHha0qtqWaPtwAPVLZIuzOKPJ?usp=drive_link)
-
 # Report on the Neural Network Model Performance
-
 ## Overview of the Analysis:
 The analysis aimed to build a deep learning model using a neural network to predict the success of charitable organizations based on various features provided by Alphabet Soup. Three attempts were made, progressively adjusting the model's architecture to improve performance.
 
 ## Results:
 ### Building and Testing the Model:
 
-#### Initial Attempt:
 ### Original Attempt:
+[Link to Colab Notebook](https://colab.research.google.com/drive/1nfnbZBiQHha0qtqWaPtwAPVLZIuzOKPJ?usp=drive_link)
 - **Architecture:**
   - Two hidden layers with 50 and 30 neurons respectively.
   - Activation function: `relu` for the first and second hidden layers, and `sigmoid` for the output layer.
@@ -20,7 +17,7 @@ The analysis aimed to build a deep learning model using a neural network to pred
   - Loss: 0.5575
 
 ### Additional Attempts:
-
+[Link to Optimization Notebook](https://colab.research.google.com/drive/1TKV1IteNaA5aT0YM_2MX_gYY4aXctER7?usp=drive_link)
 ### Attempt 1:
 - **Architecture:**
   - Two hidden layers with 64 and 32 neurons respectively.
