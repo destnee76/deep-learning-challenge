@@ -1,5 +1,5 @@
 # deep-learning-challenge
-# Report on the Neural Network Model Performance
+## Report on the Neural Network Model Performance
 
 - [Link to Colab Notebook](https://colab.research.google.com/drive/1nfnbZBiQHha0qtqWaPtwAPVLZIuzOKPJ?usp=drive_link)
 - [Link to Optimization Notebook](https://colab.research.google.com/drive/1TKV1IteNaA5aT0YM_2MX_gYY4aXctER7?usp=drive_link)
