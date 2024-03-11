@@ -1,8 +1,8 @@
 # deep-learning-challenge
 # Report on the Neural Network Model Performance
 
-[Link to Colab Notebook](https://colab.research.google.com/drive/1nfnbZBiQHha0qtqWaPtwAPVLZIuzOKPJ?usp=drive_link)
-[Link to Optimization Notebook](https://colab.research.google.com/drive/1TKV1IteNaA5aT0YM_2MX_gYY4aXctER7?usp=drive_link)
+- [Link to Colab Notebook](https://colab.research.google.com/drive/1nfnbZBiQHha0qtqWaPtwAPVLZIuzOKPJ?usp=drive_link)
+- [Link to Optimization Notebook](https://colab.research.google.com/drive/1TKV1IteNaA5aT0YM_2MX_gYY4aXctER7?usp=drive_link)
 
 ## Overview of the Analysis:
 The purpose of this analysis is to develop a deep learning model using a neural network to predict the success of charitable organizations based on various features such as application type, affiliation, classification, etc. The model is trained on a dataset provided by Alphabet Soup.
