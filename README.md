@@ -46,4 +46,4 @@ The analysis aimed to build a deep learning model using a neural network to pred
   - Loss: 0.5515
 
 ## Summary:
-The initial attempt achieved an accuracy of 72.59%, which was slightly improved upon in the subsequent attempts. While the adjustments in the architecture did not result in significant performance gains, they highlight the iterative nature of model development. Further experimentation with hyperparameters, activation functions, and additional layers could potentially enhance the model's predictive power. Additionally, exploring ensemble methods and regularization techniques may contribute to improving model performance.
+The initial attempt achieved an accuracy of 72.50%, which was slightly improved upon in the subsequent attempts. While the adjustments in the architecture did not result in significant performance gains, they highlight the iterative nature of model development. Further experimentation with hyperparameters, activation functions, and additional layers could potentially enhance the model's predictive power. Additionally, exploring ensemble methods and regularization techniques may contribute to improving model performance.
