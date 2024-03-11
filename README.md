@@ -1,49 +1,58 @@
 # deep-learning-challenge
 # Report on the Neural Network Model Performance
+
+[Link to Colab Notebook](https://colab.research.google.com/drive/1nfnbZBiQHha0qtqWaPtwAPVLZIuzOKPJ?usp=drive_link)
+[Link to Optimization Notebook](https://colab.research.google.com/drive/1TKV1IteNaA5aT0YM_2MX_gYY4aXctER7?usp=drive_link)
+
 ## Overview of the Analysis:
-The analysis aimed to build a deep learning model using a neural network to predict the success of charitable organizations based on various features provided by Alphabet Soup. Three attempts were made, progressively adjusting the model's architecture to improve performance.
+The purpose of this analysis is to develop a deep learning model using a neural network to predict the success of charitable organizations based on various features such as application type, affiliation, classification, etc. The model is trained on a dataset provided by Alphabet Soup.
 
 ## Results:
-### Building and Testing the Model:
 
-### Original Attempt:
-[Link to Colab Notebook](https://colab.research.google.com/drive/1nfnbZBiQHha0qtqWaPtwAPVLZIuzOKPJ?usp=drive_link)
-- **Architecture:**
-  - Two hidden layers with 50 and 30 neurons respectively.
-  - Activation function: `relu` for the first and second hidden layers, and `sigmoid` for the output layer.
+### Data Preprocessing:
 
-- **Performance:**
+#### Target(s) and Features:
+- **Target(s):**
+  - `IS_SUCCESSFUL`: Indicates whether the charity donation was used effectively (1) or not (0).
+
+- **Features:**
+  - All columns except `IS_SUCCESSFUL` are considered features.
+
+#### Removed Variables:
+- `EIN` and `NAME` columns were removed as they are not beneficial for predictive modeling.
+
+### Compiling, Training, and Evaluating the Model:
+
+#### Model Architecture:
+- **Neurons and Layers:**
+  - Initial model: 50 neurons in the first hidden layer and 30 neurons in the second hidden layer.
+  - Modified model 1: 64 neurons in the first hidden layer, 32 neurons in the second hidden layer.
+  - Modified model 2: 20 neurons in each of the two hidden layers.
+  - Modified model 3: 50 neurons in the first hidden layer, 30 neurons in the second hidden layer, and 10 neurons in the third hidden layer.
+
+- **Activation Functions:**
+  - Initial model and Modified model 1: `relu` activation function in hidden layers and `sigmoid` activation function in the output layer.
+  - Modified model 2: `tanh` activation function in the first two hidden layers, and `sigmoid` activation function in the output layer
+  - Modified model 3: `sigmoid` activation function in the first two hidden layers, `tanh` activation function in the third hidden layer, and `sigmoid` activation function in the output layer.
+
+#### Model Performance:
+- **Initial Model:**
   - Accuracy: 72.50%
-  - Loss: 0.5575
-
-### Additional Attempts:
-[Link to Optimization Notebook](https://colab.research.google.com/drive/1TKV1IteNaA5aT0YM_2MX_gYY4aXctER7?usp=drive_link)
-### Attempt 1:
-- **Architecture:**
-  - Two hidden layers with 64 and 32 neurons respectively.
-  - Activation function: `relu` for hidden layers and `sigmoid` for the output layer.
-
-- **Performance:**
-  - Accuracy: 72.59%
   - Loss: 0.5551
 
-### Attempt 2:
-- **Architecture:**
-  - Two hidden layers with 20 neurons each.
-  - Activation function: `tanh` for hidden layers and `sigmoid` for the output layer.
-
-- **Performance:**
-  - Accuracy: 72.62%
+- **Modified Model 1:**
+  - Accuracy: 72.67%
   - Loss: 0.5517
 
-### Attempt 3:
-- **Architecture:**
-  - Three hidden layers with 50, 30, and 10 neurons respectively.
-  - Activation function: `sigmoid` for the first two hidden layers, `tanh` for the third hidden layer, and `sigmoid` for the output layer.
-
-- **Performance:**
-  - Accuracy: 72.76%
+- **Modified Model 2:**
+  - Accuracy: 72.30%
   - Loss: 0.5515
 
-## Summary:
-The initial attempt achieved an accuracy of 72.50%, which was slightly improved upon in the subsequent attempts. While the adjustments in the architecture did not result in significant performance gains, they highlight the iterative nature of model development. Further experimentation with hyperparameters, activation functions, and additional layers could potentially enhance the model's predictive power. Additionally, exploring ensemble methods and regularization techniques may contribute to improving model performance.
+- **Modified Model 3:**
+  - Accuracy: 72.66%
+  - Loss: 0.5515
+
+### Summary:
+The deep learning models achieved an accuracy ranging from approximately 72.50% to 72.67%. Although the modifications made to the architecture did not lead to a significant improvement in model performance, they demonstrate the flexibility of neural networks in accommodating various configurations. 
+
+To further enhance model performance, more advanced techniques could be explored such as adjusting learning rates, experimenting with different optimizers, or implementing more complex architectures like convolutional neural networks (CNNs) or recurrent neural networks (RNNs) if the nature of the data warrants it. Additionally, ensemble methods such as bagging or boosting could be employed to combine the strengths of multiple models for better predictive accuracy. Regularization techniques like dropout or L2 regularization can also be utilized to prevent overfitting. Further exploration and experimentation are recommended to refine the model and potentially improve its predictive power.
